@@ -20,7 +20,5 @@ module.exports = {
    }
   }]
  },
- plugins: [new HtmlWebpackPlugin({
-  title: 'Daftacademy Frontend Level Up'
- })],
+ plugins: [new HtmlWebpackPlugin()],
 };
