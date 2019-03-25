@@ -1,0 +1,31 @@
+{
+  "name": "homework1",
+  "version": "1.0.0",
+  "description": "First project - organize the app environment",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node start.js",
+    "build": "webpack --config webpack.config.js"
+  },
+  "keywords": [
+    "webpack",
+    "gitignore",
+    "npm",
+    "node",
+    "package.json"
+  ],
+  "author": "Filip Kaźmierczak",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-loader": "^8.0.5",
+    "html-webpack-plugin": "^3.2.0"
+  },
+  "browserslist": "> 0.25%, not dead"
+}
