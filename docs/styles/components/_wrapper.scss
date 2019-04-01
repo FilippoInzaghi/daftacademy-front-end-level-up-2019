@@ -1,0 +1,8 @@
+.wrapper{
+ margin: 0 auto;
+ @include atMedium{
+  max-width: 80%;
+ }
+
+ 
+}

@@ -1,0 +1,27 @@
+.footer{
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 15px 0px;
+ font-size: .8rem;
+ display: flex;
+ justify-content: space-between;
+ color: #999;
+ &__hello{  
+  font-size: .8rem;
+  padding-left: 25px;
+  & strong{
+   color: #555;
+  }
+ }
+ &__follow-us{
+  padding-right: 25px;
+  &__logo{
+   display: inline-block;
+   height: .8rem;
+   color: #999;
+   margin: 0 5px;
+   
+  }
+ }
+}
+

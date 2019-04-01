@@ -47,14 +47,14 @@ module.exports = {
       filename: devMode ? '[name].css' : '[name].[hash].css',
       chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
     }),
-    // new CopyWebpackPlugin([{
-    //     from: 'src/img',
-    //     to: 'img'
-    //   },
-    //   {
-    //     from: 'src/styles',
-    //     to: 'styles'
-    //   }
-    // ])
+    new CopyWebpackPlugin([{
+        from: 'src/img',
+        to: 'img'
+      },
+      {
+        from: 'src/styles',
+        to: 'styles'
+      }
+    ])
   ],
 };

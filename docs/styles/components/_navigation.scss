@@ -1,0 +1,33 @@
+.navigation {
+
+  & ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    @include atLarge{
+      flex-direction: row;
+    }
+
+  }
+
+  & li {
+    list-style: none;
+    align-self: center;
+    color: rgb(157, 160, 160);
+    transition: .5s;
+    cursor: pointer;
+    padding-bottom: 1px;
+    flex-basis: 21%;
+    flex-shrink: 0;
+
+    @include atLarge{
+      flex-basis: auto;
+    }
+
+    &:hover {
+      color: #222;
+      border-bottom: 1px solid black;
+      padding-bottom: 0px;
+    }
+  }
+}
