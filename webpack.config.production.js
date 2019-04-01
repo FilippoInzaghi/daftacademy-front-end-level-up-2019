@@ -11,11 +11,7 @@ module.exports = {
     filename: 'main.js',
     path: distDir
   },
-  mode: 'development',
-  devtool: 'eval',
-  devServer: {
-    contentBase: distDir
-  },
+  mode: 'production',
   module: {
     rules: [{
         test: /\.js$/,
@@ -51,14 +47,14 @@ module.exports = {
       filename: devMode ? '[name].css' : '[name].[hash].css',
       chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
     }),
-    new CopyWebpackPlugin([{
-        from: 'src/img',
-        to: 'img'
-      },
-      {
-        from: 'src/styles',
-        to: 'styles'
-      }
-    ])
+    // new CopyWebpackPlugin([{
+    //     from: 'src/img',
+    //     to: 'img'
+    //   },
+    //   {
+    //     from: 'src/styles',
+    //     to: 'styles'
+    //   }
+    // ])
   ],
 };

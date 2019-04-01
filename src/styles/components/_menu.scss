@@ -1,0 +1,56 @@
+.menu {
+ display: flex;
+ padding-top: 50px;
+ flex-direction: row;
+ align-content: space-around;
+ justify-content: space-between;
+ flex-wrap: wrap;
+
+
+ &__item {
+  width: 100%;
+  min-height: 300px;
+  overflow: hidden;
+
+  @include atMedium {
+   width: 250px;
+   min-height: 250px
+  }
+
+  @include atLarge {
+   width: 300px;
+   min-height: 300px
+  }
+
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  background-size: 100%;
+  position: relative;
+
+  &:nth-child(2),
+  &:nth-child(3),
+  &:nth-child(4) {
+   background-size: 140%;
+   background-position-x: 70%;
+  }
+
+
+  &:nth-child(2) {
+   border: 6px solid rgb(255, 184, 146);
+   background-size: 160%;
+  }
+
+ }
+
+ &__title {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 500;
+ }
+}
