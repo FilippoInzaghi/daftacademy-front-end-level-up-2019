@@ -1,6 +1,5 @@
+import "@babel/polyfill";
 import daftAcademyCode from './daftAcademyCode';
-import './styles/style.scss';
-import '@fortawesome/fontawesome-free';
-
-daftAcademyCode();
-
+import {time} from './watch';
+// daftAcademyCode();
+time();

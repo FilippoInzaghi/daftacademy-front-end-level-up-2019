@@ -1,3 +1,5 @@
+import './styles/style.scss';
+
 const img1 = 'url(./img/bijou.jpg)';
 const img2 = 'url(./img/negroni.jpg)';
 const img3 = 'url(./img/mojito.jpg)';
@@ -46,8 +48,6 @@ export default function () {
  </p>
 
  </footer>
- `
- document
-
+ `;
  body.appendChild(div);
 };
