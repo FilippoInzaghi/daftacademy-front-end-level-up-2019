@@ -56,16 +56,14 @@ export const time = () => {
  const div = document.createElement('div');
  Object.assign(div.style, {
   position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform : 'translate(-50%,-50%)',
+  top: '0',
+  left: '0',
   color: 'red',
-  fontSize: '6rem'
+  fontSize: '2rem'
  })
  function render(){
   div.innerHTML = `<span>${hours > 9 ? hours : "0"+hours}</span> : <span>${minutes > 9 ? minutes : "0"+minutes}</span> : <span>${seconds > 9 ? seconds : "0"+seconds}</span> <span>${AM_flag ? ' AM' : ' PM'}</span>`;
   body.appendChild(div);
-  console.log(hours, minutes, seconds);
- };
+  };
  render();
 }
