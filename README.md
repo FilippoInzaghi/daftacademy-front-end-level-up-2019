@@ -2,6 +2,6 @@ GitHub Pages: https://filippoinzaghi.github.io/daftacademy-front-end-level-up-20
 ---
 ##PRACA DOMOWA 5 - pliki:
 
-  *fibbonaci.js
+  *fibbonaci.js  
   *fibbonacci.test.js
 
