@@ -1,8 +1,17 @@
 import "@babel/polyfill";
-import daftAcademyCode from './daftAcademyCode';
-import {time} from './watch';
+// import daftAcademyCode from './daftAcademyCode';
 // daftAcademyCode();
-import promises from './promises'
+// import promises from './promises';
+// promises();
+import fib from './fibbonacci';
+
+import {time} from './watch';
 time();
-promises();
+
+console.time('fibbonacci test');
+
+const fibVariable = fib(-10);
+console.log(fibVariable);
+
+console.timeEnd('fibbonacci test')
 
